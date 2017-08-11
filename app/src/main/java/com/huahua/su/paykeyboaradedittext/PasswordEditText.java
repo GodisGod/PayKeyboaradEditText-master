@@ -94,7 +94,10 @@ public class PasswordEditText extends LinearLayout {
             mListener.onNumCompleted(str);
         }
     }
-
+    public void clearInput(){
+        mEditText.setText("");
+        setBuilderValue("");
+    }
     public void setSecurityEditCompileListener(
             SecurityEditCompileListener mListener) {
         this.mListener = mListener;
